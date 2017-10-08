@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introduction to Machine Learning"
-date:   2017-10-08 00:15:25 -0500
+date:   2017-10-08 00:05:25 -0500
 categories: Machine Learning
 ---
 TBD

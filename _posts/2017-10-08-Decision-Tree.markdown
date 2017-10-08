@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Decision Tree"
-date:   2017-10-08 00:15:25 -0500
+date:   2017-10-08 00:10:25 -0500
 categories: Machine Learning
 ---
 TBD

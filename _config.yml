@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   엔트로피가 증가하는 블로그
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-facebook_username: Byungjin Jun
+facebook_username: byungjin.jun.33
 github_username:  ByungjinJun
 
 # Build settings
