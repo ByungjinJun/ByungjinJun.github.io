@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Network, Machine learning, and the world
+author: 2017 Byungjin Jun All rights reserved.
 email: Byungjin.Jun.55@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   엔트로피가 증가하는 블로그
@@ -29,6 +30,7 @@ theme: minima
 #plugins:
 #  - jekyll-feed
 
+gems: jekyll-seo-tag
 google-analytics:
   id: UA-107719786-1
 
