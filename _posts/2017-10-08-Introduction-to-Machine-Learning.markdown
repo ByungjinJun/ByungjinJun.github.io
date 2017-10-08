@@ -6,4 +6,4 @@ categories: Machine Learning
 ---
 TBD
 
- 중간시험 공부할 때 올려야지
+중간시험 공부할 때 올려야지
