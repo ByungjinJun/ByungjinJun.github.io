@@ -45,7 +45,7 @@ $$\vec{x_q}$$
 단일 최근접 알고리즘에서는는 위의 DATA를 기반으로 query point를 계산하고, 아웃풋을 선택한다.
 이를 univariate(단일 변수) 그래프로 설명해보면..
 
-![alt text](https://raw.githubusercontent.com/ByungjinJun/ByungjinJun.github.io/master/_posts/img_2017-10-09-NN/fig_LWR.png "single NN")[^1]
+![alt text](https://raw.githubusercontent.com/ByungjinJun/ByungjinJun.github.io/master/_posts/img_2017-10-09-NN/fig_single_NN.png "single NN")[^1]
 
 위 그래프에서 쿼리 포인트인 붉은 점은 근처 점들의 위치를 비교해서 더 가까운 오른쪽 점과 같은 값 (f(x) = 2) 을 취한다.
 
@@ -103,7 +103,7 @@ $$\vec{x_q}$$
     **- 이웃을 고려한 출력값(가중치 적용된 평균)**
     $$h(x_q) = \frac{\sum_i w_i \cdot f(x_i)}{\sum_i w_i}$$
 
-![alt text](https://github.com/ByungjinJun/ByungjinJun.github.io/tree/master/_posts/img_2017-10-09-NN/fig_kernel_regression.png "kernel regression")[^3]
+![alt text](https://raw.githubusercontent.com/ByungjinJun/ByungjinJun.github.io/tree/master/_posts/img_2017-10-09-NN/fig_kernel_regression.png "kernel regression")[^3]
 
     kNN과 비교했을 때 끝단에 위치한 데이터 포인트들에서 훨씬 러닝이 잘 되고 있음을 알 수 있다. 그런데 뭐든지 과하면 안된다는 옛말처럼, 과하게 weight를 잡다가는 overfitting 문제가 또 발생할 수 있다...
 
@@ -128,7 +128,7 @@ $$\vec{x_q}$$
 
 속칭 LWR. 일반적인 Regression은 global값을 사용해서 연산량이 많고 공간을 많이 사용하는 단점이 있다. LWR은 이를 극복하기 위해 local값을 사용한다. 로컬값들을 이용해서 출력값을 추정하고, Kernel regression의 가중치 값을 이용하여 에러를 보정한다.(귀찮)
 
-![alt text](https://github.com/ByungjinJun/ByungjinJun.github.io/tree/master/_posts/img_2017-10-09-NN/fig_LWR.png "Locally Weighted Regression")[^4]
+![alt text](https://raw.githubusercontent.com/ByungjinJun/ByungjinJun.github.io/tree/master/_posts/img_2017-10-09-NN/fig_LWR.png "Locally Weighted Regression")[^4]
 
 결과 그래프는 위와 같이 나온다. Kernel regression과 비교했을 때, 적은 연산으로도 끝단값에서의 그래프가 훨씬 스무스해진 것을 볼 수 있다. 하지만 역시 overfitting을 식별해야하는 문제가 남는다. 그리고 "적은 연산"은 또 어떤 기준으로 산정할 거냐고.
 
