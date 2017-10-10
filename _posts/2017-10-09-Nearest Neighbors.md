@@ -11,18 +11,17 @@ categories: Machine Learning
 <br />
 &nbsp;&nbsp; Supervised learning의 중요한 기초 토픽 중 하나는 Instance-based learning이다. Instance-based learning에서 비교하는 트레이닝 인스턴스들이 메모리에 저장되어 있기 때문에 memory-based learning이라고도 한다. Lazy learning이라고도 하는데, 이에 대해서는 [Lazy learning](https://en.wikipedia.org/wiki/Lazy_learning) 참조. (반대는 [Eager learning](https://en.wikipedia.org/wiki/Eager_learning))
 <br />
-
 > **Why is it Instance-based?**
 > 
 > &nbsp;&nbsp; 모델의 hypotheses를 트레이닝 instances를 바탕으로 세우기 때문이다. 즉, 데이터의 복잡도가 증가함에 따라 해당 hypothesis의 복잡도가 증가할 수 있다는 것.
 
-<br />
 &nbsp;&nbsp; 대표적인 instance-based learning 중 하나가 바로 Nearest neighbor learning이며, 그 중에서도 kNN, kernel regression 등이 잘 알려져 있다.
 <br /><br />
 **기본적인 알고리즘의 흐름**은 이렇다.<br />
 1. 출력값(output)을 알고 있는 기존 케이스들에서 example set을 선택한다.<br />
 2. 새로운 케이스를 보면, 가장 유사한 알려진 케이스를 선택해서 그 출력값을 새로운 케이스의 출력값으로 선택한다.
 <br /><br />
+
 수식으로 표현하면 요렇다.
 * example set <br />
 $$X = {\vec{x_1}, ..., \vec{x_n}}$$
@@ -37,6 +36,7 @@ $$\forall \vec{x},  h(\vec{x}) \approx f(\vec{x})$$
 * 새로운 데이터 => query point<br />
 $$\vec{x_q}$$
 <br /><br /><br />
+
 ## **2. Single Nearest Neighbor**
 <br />
 &nbsp;&nbsp;단일 최근접 알고리즘에서는는 위의 DATA를 기반으로 query point를 계산하고, 아웃풋을 선택한다.
@@ -65,7 +65,6 @@ $$\vec{x_q}$$
     1. Regression: K개의 가까운 이웃들의 평균값
     2. Classification: K개의 가까운 이웃들 중 가장 대표적인 값
 
-<br />
 위 특성들을 보면 의문점들이 발생(해야) 한다.
 <br /><br />
 **1. K는 어떻게 결정하는가?**<br />
@@ -73,6 +72,7 @@ $$\vec{x_q}$$
 - K가 너무 크면 underfitting이 발생하겠지 맥락상. 그런데 왜? 너무 많은 값들을 고려하다보니 유의미한 차이를 만들어낼 수 없다. 같이 묶이지 말아야 할 놈들도 같이 묶인다는 것이다.<br />
 - 그래서 어떻게 결정하냐고. => empirically. 컴퓨터 좋은 게 뭐냐. 만들어서 실험 돌려본다. 이 때 이용하는 것이 cross-validation.<br />
 <br />
+
 **2. Regression과 Classification은 어떻게 결정하는가?**<br />
 - 과제야. 나도 몰라 아직.<br />
 
@@ -81,26 +81,26 @@ $$\vec{x_q}$$
 <br />
 ![alt text](https://raw.githubusercontent.com/ByungjinJun/ByungjinJun.github.io/master/_posts/img_2017-10-09-NN//fig_kNN.png "kNN")
 
-그래프 내부 내용은 중요치 않다. 중요한 것은 데이터의 형태에 따라 문제점들이 발생할 수 있다는 것이다. 특히 kNN의 경우에는 데이터 분포의 끝단에서 이러한 문제점들이 많이 발생한다.
+&nbsp;&nbsp;그래프 내부 내용은 중요치 않다. 중요한 것은 데이터의 형태에 따라 문제점들이 발생할 수 있다는 것이다. 특히 kNN의 경우에는 데이터 분포의 끝단에서 이러한 문제점들이 많이 발생한다.
 <br />
 <br />
 ## **4. Kernel Regression**
 <br />
-&nbsp;&nbsp; 그래서 Kernel Regression을 사용한다.<br />
+&nbsp;&nbsp; 그래서 Kernel Regression을 사용한다.<br /><br />
 > **Kernel Regression**에 지금까지와 같은 기준을 들이대보자.
 - 거리 측정 기준 :  **scaled** Euclidean
 - 고려하는 이웃 숫자 : **All of them**
-** - weight**
+- **weight**
 $$w_i = \exp\Bigl(\frac{-d(x_i, x_q)^2}{K_W^2}\Bigl)$$
     - 분자: 쿼리 포인트와 한 데이터 포인트 간 거리의 제곱
     - 분모: Kernel Width, X축의 너비 대한 비율. 즉 가까울수록 가중치를 더 준다.
-** - 이웃을 고려한 출력값(가중치 적용된 평균)**
+- **이웃을 고려한 출력값(가중치 적용된 평균)**
 $$h(x_q) = \frac{\sum_i w_i \cdot f(x_i)}{\sum_i w_i}$$
 
 <br />
 ![alt text](https://raw.githubusercontent.com/ByungjinJun/ByungjinJun.github.io/master/_posts/img_2017-10-09-NN/fig_kernel_regression.png "kernel regression")
 
-kNN과 비교했을 때 끝단에 위치한 데이터 포인트들에서 훨씬 러닝이 잘 되고 있음을 알 수 있다. 그런데 뭐든지 과하면 안된다는 옛말처럼, 과하게 weight를 잡다가는 overfitting 문제가 또 발생할 수 있다...
+&nbsp;&nbsp; kNN과 비교했을 때 끝단에 위치한 데이터 포인트들에서 훨씬 러닝이 잘 되고 있음을 알 수 있다. 그런데 뭐든지 과하면 안된다는 옛말처럼, 과하게 weight를 잡다가는 overfitting 문제가 또 발생할 수 있다...
 <br />
 <br />
 **중간정리**를 하자면, kNN이나 Kernel Regression이나 모두 간단하고 강력한 알고리즘이다.<br />
@@ -123,10 +123,11 @@ kNN과 비교했을 때 끝단에 위치한 데이터 포인트들에서 훨씬 
 <br /><br />
 ![alt text](https://raw.githubusercontent.com/ByungjinJun/ByungjinJun.github.io/master/_posts/img_2017-10-09-NN/fig_LWR.png "Locally Weighted Regression")
 
-결과 그래프는 위와 같이 나온다. Kernel regression과 비교했을 때, 적은 연산으로도 끝단값에서의 그래프가 훨씬 스무스해진 것을 볼 수 있다. 하지만 역시 overfitting을 식별해야하는 문제가 남는다. 그리고 "적은 연산"은 또 어떤 기준으로 산정할 거냐고.
+&nbsp;&nbsp;결과 그래프는 위와 같이 나온다. Kernel regression과 비교했을 때, 적은 연산으로도 끝단값에서의 그래프가 훨씬 스무스해진 것을 볼 수 있다. 하지만 역시 overfitting을 식별해야하는 문제가 남는다. 그리고 "적은 연산"은 또 어떤 기준으로 산정할 거냐고.
 <br />
 + linear 대신 polynomial 값들을 쓸 수 있다. 차이점에 대해서는 공부 요.
 <br /><br /><br />
+
 ## **6. Conclusion**
 <br />
 &nbsp;&nbsp;이 모든 memory-based learning들은 새 training example들을 쉽게 사용할 수 있고, 새로운 query들을 hypothesis에 적용하는 작업도 상당히 쉽다는 것이 강점이다.<br />
