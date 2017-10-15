@@ -3,10 +3,12 @@ layout: post
 title:  "Nearest Neighbors"
 date:   2017-10-09 14:50:25 -0500
 categories: Machine_Learning
+comments: true
 ---
 
 ###### **I acknowledge that contents of this posting is based on 2017 Fall EECS349 course by Prof. Bryan Pardo at Northwestern Universtiy. I post this for the learning purpose of myself.**
 <br /><br />
+
 ## **1. Introduction to the Nearest Neighbor learning**
 <br />
 &nbsp;&nbsp; Supervised learning의 중요한 기초 토픽 중 하나는 Instance-based learning이다. Instance-based learning에서 비교하는 트레이닝 인스턴스들이 메모리에 저장되어 있기 때문에 memory-based learning이라고도 한다. Lazy learning이라고도 하는데, 이에 대해서는 [Lazy learning](https://en.wikipedia.org/wiki/Lazy_learning) 참조. (반대는 [Eager learning](https://en.wikipedia.org/wiki/Eager_learning))
@@ -32,7 +34,7 @@ $$f : X \to Y$$
 * Data (example, target function output)<br />
 $$D=<\vec{x_1},f(\vec{x_1})>, ..., <\vec{x_m},f(\vec{x_m})>$$
 * hypothesis h<br />
-$$\forall \vec{x},  h(\vec{x}) \approx f(\vec{x})$$ 
+$$\forall \vec{x}, h(\vec{x}) \approx f(\vec{x})$$ 
 * 새로운 데이터 => query point<br />
 $$\vec{x_q}$$
 <br /><br /><br />

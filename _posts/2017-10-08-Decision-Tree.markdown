@@ -3,6 +3,7 @@ layout: post
 title:  "Decision Tree"
 date:   2017-10-08 00:10:25 -0500
 categories: Machine_Learning
+comments: true
 ---
 TBD
 

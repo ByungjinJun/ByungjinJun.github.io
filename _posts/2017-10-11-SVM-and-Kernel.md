@@ -3,8 +3,14 @@ layout: post
 title:  "SVM and Kernel"
 date:   2017-10-09 14:50:25 -0500
 categories: Machine_Learning
+comments: true
 ---
 
+TBD
+
+중간시험 공부할 때 올려야지
+
+<!--
 SVM
 - main idea
 - Find an optimal hyperplane to split the data into two sets: Maximize margin
@@ -27,3 +33,4 @@ promise catch definition?
 - dictionary encoding. word frequency w/ 20000 sized dictionary
 - spam / non-spam => kernel.
 complex model's trade-offs
+-->
