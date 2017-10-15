@@ -18,7 +18,7 @@ author: Byungjin
 email: Byungjin.Jun.55@gmail.com
 # description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://byungjinjun.github.io # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #img-link: https://raw.githubusercontent.com/ByungjinJun/ByungjinJun.github.io/master/_posts/img/
 facebook_username: byungjin.jun.33
 linkedin_username: byungjin-jun-47691b83
