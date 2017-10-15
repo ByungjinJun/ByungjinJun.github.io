@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Nearest Neighbors"
-date:   2017-10-09 13:50:25 -0500
-categories: Machine Learning
+date:   2017-10-09 14:50:25 -0500
+categories: Machine_Learning
 ---
 
 ###### **I acknowledge that contents of this posting is based on 2017 Fall EECS349 course by Prof. Bryan Pardo at Northwestern Universtiy. I post this for the learning purpose of myself.**
@@ -20,7 +20,7 @@ categories: Machine Learning
 **기본적인 알고리즘의 흐름**은 이렇다.<br />
 1. 출력값(output)을 알고 있는 기존 케이스들에서 example set을 선택한다.<br />
 2. 새로운 케이스를 보면, 가장 유사한 알려진 케이스를 선택해서 그 출력값을 새로운 케이스의 출력값으로 선택한다.
-<br /><br />
+<br />
 
 수식으로 표현하면 요렇다.
 * example set <br />
@@ -42,9 +42,9 @@ $$\vec{x_q}$$
 &nbsp;&nbsp;단일 최근접 알고리즘에서는는 위의 DATA를 기반으로 query point를 계산하고, 아웃풋을 선택한다.
 이를 univariate(단일 변수) 그래프[^1]로 설명해보면..
 <br /><br />
-![alt text](https://raw.githubusercontent.com/ByungjinJun/ByungjinJun.github.io/master/_posts/img_2017-10-09-NN/fig_single_NN.png "single NN")
+![alt text](https://raw.githubusercontent.com/ByungjinJun/ByungjinJun.github.io/master/_posts/img/171009_1_single_NN.png "single NN")
 
-위 그래프에서 쿼리 포인트인 붉은 점은 근처 점들의 위치를 비교해서 더 가까운 오른쪽 점과 같은 값 (f(x) = 2) 을 취한다.
+&nbsp;&nbsp;위 그래프에서 쿼리 포인트인 붉은 점은 근처 점들의 위치를 비교해서 더 가까운 오른쪽 점과 같은 값 (f(x) = 2) 을 취한다.
 <br /><br />
 > **single NN**은 아래와 같은 특성을 갖는다. 
 - 거리 측정 기준 : 통상 Euclidean
@@ -65,13 +65,12 @@ $$\vec{x_q}$$
     1. Regression: K개의 가까운 이웃들의 평균값
     2. Classification: K개의 가까운 이웃들 중 가장 대표적인 값
 
-위 특성들을 보면 의문점들이 발생(해야) 한다.
+위 특성들을 보면 의문점들이 발생~~(해야)~~ 한다.
 <br /><br />
 **1. K는 어떻게 결정하는가?**<br />
 - K가 너무 작으면 overfitting이 발생한다. 왜? 너무 적은 수의 값들을 고려하다보면 noise가 쉽게 발생한다.<br />
 - K가 너무 크면 underfitting이 발생하겠지 맥락상. 그런데 왜? 너무 많은 값들을 고려하다보니 유의미한 차이를 만들어낼 수 없다. 같이 묶이지 말아야 할 놈들도 같이 묶인다는 것이다.<br />
 - 그래서 어떻게 결정하냐고. => empirically. 컴퓨터 좋은 게 뭐냐. 만들어서 실험 돌려본다. 이 때 이용하는 것이 cross-validation.<br />
-<br />
 
 **2. Regression과 Classification은 어떻게 결정하는가?**<br />
 - 과제야. 나도 몰라 아직.<br />
@@ -79,7 +78,7 @@ $$\vec{x_q}$$
 여하튼 kNN regression sample은 아래와 같다.
 <br />
 <br />
-![alt text](https://raw.githubusercontent.com/ByungjinJun/ByungjinJun.github.io/master/_posts/img_2017-10-09-NN//fig_kNN.png "kNN")
+![alt text](https://raw.githubusercontent.com/ByungjinJun/ByungjinJun.github.io/master/_posts/img/171009_2_kNN.png "kNN")
 
 &nbsp;&nbsp;그래프 내부 내용은 중요치 않다. 중요한 것은 데이터의 형태에 따라 문제점들이 발생할 수 있다는 것이다. 특히 kNN의 경우에는 데이터 분포의 끝단에서 이러한 문제점들이 많이 발생한다.
 <br />
@@ -98,7 +97,7 @@ $$w_i = \exp\Bigl(\frac{-d(x_i, x_q)^2}{K_W^2}\Bigl)$$
 $$h(x_q) = \frac{\sum_i w_i \cdot f(x_i)}{\sum_i w_i}$$
 
 <br />
-![alt text](https://raw.githubusercontent.com/ByungjinJun/ByungjinJun.github.io/master/_posts/img_2017-10-09-NN/fig_kernel_regression.png "kernel regression")
+![alt text](https://raw.githubusercontent.com/ByungjinJun/ByungjinJun.github.io/master/_posts/img/171009_3_kernel_regression.png "kernel regression")
 
 &nbsp;&nbsp; kNN과 비교했을 때 끝단에 위치한 데이터 포인트들에서 훨씬 러닝이 잘 되고 있음을 알 수 있다. 그런데 뭐든지 과하면 안된다는 옛말처럼, 과하게 weight를 잡다가는 overfitting 문제가 또 발생할 수 있다...
 <br />
@@ -116,12 +115,11 @@ $$h(x_q) = \frac{\sum_i w_i \cdot f(x_i)}{\sum_i w_i}$$
     4. 공간을 많이 사용한다.
 
 <br />
-<br />
 ## **5. Locally Weighted (Linear) Regression**
 <br />
 &nbsp;&nbsp; LWR. 일반적인 Regression은 global값을 사용해서 연산량이 많고 공간을 많이 사용하는 단점이 있다. LWR은 이를 극복하기 위해 local값을 사용한다. 로컬값들을 이용해서 출력값을 추정하고, Kernel regression의 가중치 값을 이용하여 에러를 보정한다.(귀찮)
 <br /><br />
-![alt text](https://raw.githubusercontent.com/ByungjinJun/ByungjinJun.github.io/master/_posts/img_2017-10-09-NN/fig_LWR.png "Locally Weighted Regression")
+![alt text](https://raw.githubusercontent.com/ByungjinJun/ByungjinJun.github.io/master/_posts/img/171009_4_LWR.png "Locally Weighted Regression")
 
 &nbsp;&nbsp;결과 그래프는 위와 같이 나온다. Kernel regression과 비교했을 때, 적은 연산으로도 끝단값에서의 그래프가 훨씬 스무스해진 것을 볼 수 있다. 하지만 역시 overfitting을 식별해야하는 문제가 남는다. 그리고 "적은 연산"은 또 어떤 기준으로 산정할 거냐고.
 <br />

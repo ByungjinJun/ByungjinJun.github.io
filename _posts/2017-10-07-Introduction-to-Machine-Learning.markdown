@@ -2,7 +2,7 @@
 layout: post
 title:  "Introduction to Machine Learning"
 date:   2017-10-07 20:05:25 -0500
-categories: Machine Learning
+categories: Machine_Learning
 ---
 TBD
 
