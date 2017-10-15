@@ -22,7 +22,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #img-link: https://raw.githubusercontent.com/ByungjinJun/ByungjinJun.github.io/master/_posts/img/
 facebook_username: byungjin.jun.33
 linkedin_username: byungjin-jun-47691b83
-github_username:  ByungjinJun
+github_username: ByungjinJun
 
 # Build settings
 markdown: kramdown
@@ -35,7 +35,7 @@ gems: jekyll-seo-tag
 google-analytics:
   id: UA-107719786-1
 disqus:
-    shortname: jin55
+  shortname: jin55
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
