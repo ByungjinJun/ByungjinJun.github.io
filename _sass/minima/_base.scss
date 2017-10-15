@@ -225,7 +225,7 @@ table {
   text-align: $table-text-align;
   color: lighten($text-color, 18%);
   border-collapse: collapse;
-  border: 1px solid black;
+  border: 1px solid $grey-color-light;
   tr {
     &:nth-child(even) {
       background-color: lighten($grey-color-light, 6%);
@@ -242,4 +242,14 @@ table {
   td {
     border: 1px solid $grey-color-light;
   }
+}
+
+
+
+.mbtablestyle {
+        border-collapse: collapse;
+
+   > table, td, th {
+        border: 1px solid black;
+        }
 }
