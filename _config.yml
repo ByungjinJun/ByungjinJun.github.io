@@ -17,7 +17,7 @@ title: Network, Machine learning, and the World
 author: Byungjin
 email: Byungjin.Jun.55@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-    Too much full name here.. I am not a narcissist.
+    컴퓨터, 네트워크와 머신러닝, 그리고 우리 사는 세상
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #img-link: https://raw.githubusercontent.com/ByungjinJun/ByungjinJun.github.io/master/_posts/img/
