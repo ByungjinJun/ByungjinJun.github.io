@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Linear-regression"
+title:  "Linear Regression"
 date:   2017-10-09 14:50:25 -0500
 categories: Machine_Learning
 comments: true
