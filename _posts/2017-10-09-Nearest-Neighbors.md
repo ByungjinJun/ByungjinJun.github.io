@@ -3,7 +3,6 @@ layout: post
 title:  "Nearest Neighbors"
 date:   2017-10-09 14:50:25 -0500
 categories: Machine_Learning
-comments: true
 ---
 
 ###### **I acknowledge that contents of this posting is based on 2017 Fall EECS349 course by Prof. Bryan Pardo at Northwestern Universtiy. I post this for the learning purpose of myself.**
