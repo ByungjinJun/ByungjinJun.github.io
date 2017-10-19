@@ -4,6 +4,7 @@ title:  "The beginning of my blog"
 date:   2017-10-07 17:55:25 -0500
 categories: writing
 ---
+
 처음으로 블로그를 시작해 본다.
 
 학습과 연구 / 나름의 글을 써보는 공간으로 활용해보려 하는데..
