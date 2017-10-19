@@ -51,7 +51,7 @@ similar to Pearson one
 
 RECOMMENDATION & PREDICTION
 
-pretty much similar
+pretty much similar[^1]
 
 how to predict ratings to unrated items?
 1) define a similarity measure
@@ -76,3 +76,5 @@ Missing values
 - mean? random(noise)? crazy?
 - what is a good imputation technique
 - 
+
+[^1]: dddddd
