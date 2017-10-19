@@ -32,8 +32,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-10-07-(BasicML)-1.Intro-to-Machine-Learning-&amp;-Key_Terms.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1395">
-                <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+              <first_editor relative-caret-position="455">
+                <caret line="88" column="6" lean-forward="false" selection-start-line="88" selection-start-column="6" selection-end-line="88" selection-end-column="6" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -55,8 +55,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-10-09-(BasicML)-3.Nearest-Neighbors.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="30">
-                <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+              <first_editor relative-caret-position="470">
+                <caret line="132" column="12" lean-forward="false" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="12" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -277,12 +277,12 @@
       <workItem from="1508424730965" duration="2916000" />
       <workItem from="1508427674421" duration="249000" />
       <workItem from="1508427943410" duration="5751000" />
-      <workItem from="1508445951441" duration="964000" />
+      <workItem from="1508445951441" duration="1245000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9880000" />
+    <option name="totallyTimeSpent" value="10161000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="728" extended-state="6" />
@@ -502,8 +502,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-10-07-(BasicML)-1.Intro-to-Machine-Learning-&amp;-Key_Terms.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1395">
-            <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <first_editor relative-caret-position="455">
+            <caret line="88" column="6" lean-forward="false" selection-start-line="88" selection-start-column="6" selection-end-line="88" selection-end-column="6" />
             <folding />
           </first_editor>
           <second_editor />
@@ -519,8 +519,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-10-09-(BasicML)-3.Nearest-Neighbors.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <first_editor relative-caret-position="470">
+            <caret line="132" column="12" lean-forward="false" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="12" />
             <folding />
           </first_editor>
           <second_editor />
