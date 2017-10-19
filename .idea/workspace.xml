@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e5dcd16-809e-4609-a706-d22125d13ffa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2017-10-07-(BasicML)-1.Intro-to-Machine-Learning-&amp;-Key_Terms.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2017-10-07-Introduction-to-Machine-Learning.markdown" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2017-10-07-Blog-Begins.markdown" afterPath="$PROJECT_DIR$/_posts/2017-10-07-Blog-Begins.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2017-10-08-Decision-Tree.markdown" afterPath="$PROJECT_DIR$/_posts/2017-10-08-(BasicML)-2.Decision-Tree.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2017-10-09-Nearest-Neighbors.md" afterPath="$PROJECT_DIR$/_posts/2017-10-09-(BasicML)-3.Nearest-Neighbors.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-10-14-나의-일정-관리-체계(feat.일정-관리-앱).md" afterPath="$PROJECT_DIR$/_posts/2017-10-14-나의-일정-관리-체계(feat.일정-관리-앱).md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -251,12 +247,12 @@
       <updated>1508424727515</updated>
       <workItem from="1508424730965" duration="2916000" />
       <workItem from="1508427674421" duration="249000" />
-      <workItem from="1508427943410" duration="4908000" />
+      <workItem from="1508427943410" duration="5582000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8073000" />
+    <option name="totallyTimeSpent" value="8747000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1427" y="131" width="1323" height="869" extended-state="0" />
