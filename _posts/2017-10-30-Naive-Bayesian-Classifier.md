@@ -1,0 +1,142 @@
+---
+layout: post
+title:  "1.Intro to Machine Learning & Key terms"
+date:   2017-10-30 23:15:25 -0500
+categories: Machine_Learning
+---
+
+
+미적미적 다른 일들을 하며 머신러닝 포스트를 미뤄두고 있었다. 이미 지난 내용들은 Thanksgiving에 정리하도록 하고, 우선 지난주에 배운 내용부터 정리하자.
+<br /><br />
+
+## **1. Intro** 
+
+이 모델은 Naïve Bayesian model과 비교하여 뭐가 좋고 뭐가 나쁘고... 논문을 읽다보면 허구헌날 등장하는 내용이다. 용어를 찾아보면 '특성들 사이의 독립을 가정하는 베이즈 정리를 적용한 확률 분류기의 일종' 으로 나오는데, ~~그래서 그게 뭔데?~~ 혼자 깊이 있게 파고들기 힘들었다. ~~(귀찮았다.)~~ 공부해야지 하고 생각하던 차에 마침 수업 시간에 해당 내용을 다루었고, 수업시간 내용을 기반으로 Bayesian Classifier에 대해 정리한다.
+
+기본적으로 Naïve Bayes Classifier은 ~~아마도~~ 중학 수학의 기초 확률에 기반을 둔다. 
+
+| probability | equation |
+|:--:|:--:|
+| 샘플 공간의 전체 확률 | $P(S) = 1$ |
+| 어떤 이벤트 e가 발생할 확률 | $0 \le P(e_1) \le 1$ |
+| 두 이벤트가 Mutex[^1]일 때 확률의 합 | $P(e_1 \lor e_2) = P(e_1) + P(e_2)$ |
+| 두 이벤트가 Mutex가 아닐 때 확률의 합 | $P(e_1 \lor e_2) = P(e_1) + P(e_2) - P(A \land B)$ |
+
+그림자료가 있긴 하지만, 굳이 이것까지... 해서 생략. 어쨌든 이건 기억이 난다, 그래. 그런데, 확률에 대해서 이야기 할때 '무엇에 대한 확률인가?'를 고려해볼 필요가 있다. 확률 변수의 대상으로는 크게 두 가지를 들 수 있는데 Discrete random variable과 Boolean random variable이 그것이다. 
+
+먼저 Discrete random variable은 어떤 하나의 experiment (실시)에 대한 확률이다. 즉, 한 학급에서 어떤 성적을 받을 확률을 알아본다면, 아래 표와 같을 것이다.
+
+| grade | probability |
+|:--:|:--:|
+| A | 0.2 |
+| B | 0.5 |
+| C | 0.4 |
+| D | 0.1 |
+
+이 때, 어느 학생의 성적도 A이면서 동시에 B일 수 없다. 따라서 Discrete random variable는 항상 mutually exclusive하다.
+
+다른 하나인 Boolean random variable이 바로 베이즈 모델에서 주로 가정하는 확률 변수의 형태이다. Boolean random variable은 2가지 가능한 출력이 있는 확률 	변수로, 통상 **True/False question**이 되시겠다. 일반적인 베이즈 모델에서는 두 개 혹은 그 이상의 boolean random variable, 즉 같이 발생할 수 있지만, 독립인 ~~(혹은 독립에 가까운)~~ 확률 변수들을 고려한다. 가령, 내가 지금 화장실에 갈 확률과 내일 아침에 시카고에 비가 올 확률 두 가지를 분석하고자 한다면 (둘 다 boolean random variable이고, 둘은 서로 독립이다.) 베이즈 모델을 쓸 수 있다는 이야기다. 
+
+독립 확률 변수들을 다룰 때 우리가 필요로 하는 확률 공식들은 아래와 같다.
+
+| probability | equation |
+|:--:|:--:|
+| 두 이벤트가 독립일 때 동시에 발생할 확률 | $P(A)P(B) = P(A \land B)$ |
+| 조건부 확률 | $ P(A|B) = \frac{P(A \land B)}{P(B)} $ |
+| 체인 법칙 | $P(A|B)P(B) = P(A \land B)$ |
+| **Bayes Rule** | $P(B|A) = \frac{P(A \land B)}{P(A)} = \frac{P(A|B)P(B)}{P(A)}$ |
+
+자, 이제 여기서 베이즈 법칙이 등장한다. 사실 어렸을 때부터 많이 본 법칙인데, 대체 이 법칙과 베이즈 모델은 어떤 관계가 있는 것일까?
+<br /><br />
+
+## **2. Joint Distribution** 
+
+다시 Boolean random variable로 돌아가 보자. 독립인 이항 확률 변수들을 다룰 때 어떤 접근이 가장 먼저 떠오를까? 바로 joint distribution (결합 분포)가 먼저 나올 것이다. 이름이 익숙지 않다면 예를 보면 쉽다. 아래 예는 A, B, C가 발생할 확률의 분포이다. 
+
+| A | B | C | Prob |
+|:--:|:--:|:--:|:--:|
+| 0 | 0 | 0 | 0.1 |
+| 0 | 0 | 1 | 0.2 |
+| 0 | 1 | 0 | 0.1 |
+| 0 | 1 | 1 | 0.05 |
+| 1 | 0 | 0 | 0.05 |
+| 1 | 0 | 1 | 0.2 |
+| 1 | 1 | 0 | 0.25 |
+| 1 | 1 | 1 | 0.05 |
+
+B가 발생했을 때 A의 확률, 즉 P(A|B)의 확률을 알고 싶다면, 이 표에서는 (결합 분포를 모두 안다면) 식에 대입하여 그냥 계산하면 된다. ~~답은 0.6667이다.~~ 또한, 각 항목이 서로 독립인지 확인하기 위해서도 그냥 식에 대입해서 계산하면 된다. 간단하다. 
+
+그런데 문제는, 우리가 실생활의 케이스에서 결합분포를 모두 알기 어렵다는 데 있다. n개의 이항문제가 있다면, 우리는 그 문제의 결합분포를 도출하기 위해 $2^n$개의 값을 estimate 해야한다. $2^{20}$만 되어도 백만이 넘어간다.
+
+베이즈 모델을 활용하는 대표적인 예인 스팸메일 필터링 문제를 보자. 스팸메일을 필터링 하기 위하여 어떤 방법을 선택하면 좋을까? 여러 방법이 있겠지만, 스팸메일 안에 들어있는 단어들의 조합을 통해 spam과 ham (정상 메일)을 판별할 수 있을 것이다. ~~(그렇게 해야 스토리를 계속 진행할 수 있다)~~ 그렇다면 단어가 있고/없고가 바로 하나의 이항변수가 될 텐데, 평균적으로 미국인이 구사한다는 8000개의 단어를 사전으로 만들어 평가한다면 $2^{8000}$... 어마어마한 숫자가 된다. 백번 양보해서 스팸메일에 등장하는 100개의 단어만 사전화하고, 평가하기 위한 샘플 메일을 1조개쯤 확보했다고 치자. 샘플 하나가 하나의 이항변수 케이스에만 대응된다고 해도 (100개의 항목을 동일한 값으로 갖는 중복 메일이 없다고 해도), 1조는 고작 $2^{40}$에 불과하다. $2^{100}$에는 턱없이 부족한 숫자다. 따라서 결합 분포를 통해 스팸메일을 찾아내는 건 불가능하다고 하겠다.
+<br /><br />
+
+## **3. Bayes Classifier** 
+
+모든 케이스를 비교하는 방법으로는 스팸메일을 찾아내기 힘들다는 것은 알겠다. 그렇다면 베이즈 법칙은 과연 어떻게 사용되는 것일까.
+
+스팸메일 필터링을 위해 식을 세워보면,
+
+P(h), prior priority of h: hypothesis h가 맞을 확률 (데이터 확인 전)
+P(D), prior priority of D: 트레이닝 데이터 D가 관측될 확률
+
+실제 우리가 관심있는 값은 어떤 메일을 (단어 조합을) 받았을 때 스팸메일인지 정확히 판단할 (hypothesis h) 확률이다. 따라서
+posterior probability (사후확률), P(h|D)
+을 최대한 높여 MAP (maximum a posteriori)을 구해야 하는데, 결합 분포에서 보았듯 쌩으로 이걸 구하기는 쉽지 않다. 그래서 베이즈 법칙을 이용해 본다.
+
+$h_{MAP}$ =$ argmax(P(h|D))$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = $ argmax(\frac {P(D|h)P(h))}{P(D)})$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = $ argmax(P(D|h)P(h))$   $_{※ P(D)-상수값}$
+
+조건부 확률 P(D|h)는 스팸메일인지 정확히 판단했을 때, 메일을 관측할 확률이다. 아무래도 메일 단어 리스트를 정규화해서 스팸인 걸 예측하는 것보다, 스팸인 걸 알고나서 메일의 단어들을 예측하는게 훨씬 편하지 않겠나? 이걸 likelihood라고 하며, 우리는 이것을 최대화하는 것, 즉 ML (Maximum Likelihood)를 구하는 것을 목표로 삼을 수 있다. 
+
+$h_{MAP}$ = $ argmax(P(D|h)P(h))$
+여기서 $P(h) = \frac {1}{|H|}, \forall h \in H$라고 가정해보자. (H는 전체 이메일) 그러면..
+$h_{ML}$ = $ argmax(P(D|h))$
+
+#### **1.Bayes Optimal Classifier**
+
+위에서 나온 ML을 구하는 것이 바로 Bayes Optimal Classifier다. 이상적으로 likelyhood의 최대값을 구하면 끝. 하지만 그것이 정말 쉬운가? likelyhood를 실제로 구하려면 어떻게 해야할까?
+아래 식을 보자.
+
+$h_{MAP}$ =$ argmax\sum P(v|h)P(h|D)$ 
+여기서 v는 classification이 취할 수 있는 모든 값의 집합 V (모든 단어 조합)의 원소 하나다.
+
+즉, ML을 구하려면 모든 hypothesis에 대해, 단어 조합들 D의 분류 결과값 (T/F)들을 구하고, 이게 최대가 되는 값을 찾아야 한다는 것이다. 문제는 단어 조합 (class) 하나마다 이 작업을 해줘야 한다는 점. 이럴 바에는 결합 분포를 생으로 구하는 것과 큰 차이도 없다. 이걸 다 구하기에는 우리의 computation power는 아직 좀 야캐요.
+
+그래서 이상적인 계산법을 포기하고 새 class가 추가될 때마다 하나의 hypothesis만 뽑아서 계산하는 Gibbs Classifier도 있지만, 아무래도 정확성에 문제가 있다. 궁금하면 [여기](https://en.wikipedia.org/wiki/Gibbs_sampling)를 참조. 
+
+#### **2.Naïve Bayes Classifier**
+
+실제로 값을 구하기가 쉽지 않으니 나이브 베이즈 분류 ~~(번역된 용어는 뭔가 항상 어색하다)~~ 방법으로 접근해본다. 핵심은 항목들이 독립인 경우, 조건부 확률을 단순화할 수 있다는 점이다. MAP에서 다시 출발하되, D를 단어의 조합($a_1 ... a_n$)으로 풀어써보면,
+
+$h_{MAP}$ = $ argmax(P(D|h)P(h))$ $_{argmax: 여러 h 중 최대값}$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = $ argmax(P(a_1\land a_2 ... \land a_n|h)P(h))$ 
+[**- Independence step -**](https://en.wikipedia.org/wiki/Naive_Bayes_classifier#Probabilistic_model)
+=> 조건부 확률이 독립일 경우 P(A|B) = P(A)가 성립한다는 것을 이용하여 식을 단순화하는 과정. ~~일일이 쓰기 귀찮..~~
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = $ argmax(P(a_1|h)P(a_2|h)...P(a_n|h)P(h))$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = $ argmax(P(h)\prod (P(a_i|h))$
+
+즉, 나이브 베이즈에서는 $2^{100}$ 사이즈의 테이블을 사이즈가 2인 100개(!)의 테이블로 바꾸어 계산한다. 유의할 점은 이것은 어디까지나 각 원소 (단어)들이 conditional independence라는 가정 하에 이루어 진다는 것이다. 각 원소들이 서로 독립이 아니고 값이 서로 영향 받는 관계에서는 나이브 베이즈 분류를 사용하는 것이 제한된다.
+
+##### **Laplace smoothing / Additive smoothing / pseudo count**
+나이브 베이즈를 적용하는데 또 한 가지 문제점은, 없는 단어가 등장하면 곱셈 값이 0이 되어버린다는 것이다. 이 문제를 방지하기 위해서 위의 세 이름으로 불리는 smoothing 방법을 사용한다. 새로운 단어가 등장했을 때 +1을 해주는 단순한 방법. 아래와 같이 사용한다.
+
+$$P(x|h) = \frac {num(x) + 1}{total size + 1}$$
+ 
+ 새로 등장한 x의 num(x)는 당연히 0이다.
+
+##### **Log likelihood ratio**
+나이브 베이즈는 독립된 많은 차원을 단순화하여 계산하기 위해서 많이 차용되는데, 많은 독립확률을 곱하다보면 (확률은 항상 소수라는 점을 기억할 필요가 있다) 값이 필연적으로 매우매우 작아진다. 0을 나열하기 귀찮음은 둘째치고, 연산이 제한된 컴퓨터에서 이런 극소값을 다루다보면 오류가 발생하기 십상이다. 따라서 나이브 베이즈에서는 구하는 값에 보통 로그를 씌운다. (로그 비율은 likelihood를 비교할 때 사용한다.) 로그는 특성상 값이 아주 커지거나 작아질 때 변동폭이 줄어들기 때문에, 엄청 작은 값이 좀 더 다룰만한 값이 된다.
+
+<br />
+스팸메일을 필터링하고자 하는 이러한 노력에도 불구하고 스패머들은 의도적인 오타~~(5타)~~를 내거나 단어를 약간 변형하는 방법 등을 통해 필터링을 피해가고 있다. 심지어 CAPTCHA 패턴들도 crowdsourcing을 통해 피해가고 있다고 한다. 그래도 점점 줄어드는 스팸메일 (gmail 한정)들을 보면 차단 기술도 점점 더 발전하고 있다는 생각도 들지만, 역시 요즘 사회에서는 데이터가 깡패라는 것을 절실히 느낀다.
+
+Bayesian Belief Networks도 좀 깊이 있게 다루고 싶었는데, 생각보다 나이브 베이즈 모델을 이해하고 정리하는데 시간이 좀 걸렸다. 다음에 다룰 토픽은 Gaussian Mixture Model.
+
+<br />
+###### **I acknowledge that contents of this posting is based on 2017 Fall EECS349 course by Prof. Bryan Pardo at Northwestern Universtiy. I post this for the learning purpose of myself.**
+<br />
+
+
+[^1]: mutually exclusive (상호 배반)
