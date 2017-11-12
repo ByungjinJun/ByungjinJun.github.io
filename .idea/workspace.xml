@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e5dcd16-809e-4609-a706-d22125d13ffa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-11-06-(BasicML)-9.Gaussian-Mixture-Model.md" afterPath="$PROJECT_DIR$/_posts/2017-11-06-(BasicML)-9.Gaussian-Mixture-Model.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/img/171106_1_SVM.png" afterPath="$PROJECT_DIR$/_posts/img/171106_1_SVM.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/img/171106_2_dist.png" afterPath="$PROJECT_DIR$/_posts/img/171106_2_dist.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/img/171106_3_Gaussian_dist.png" afterPath="$PROJECT_DIR$/_posts/img/171106_3_Gaussian_dist.png" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,8 +46,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-11-06-(BasicML)-9.Gaussian-Mixture-Model.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="275">
-                <caret line="120" column="105" lean-forward="false" selection-start-line="120" selection-start-column="105" selection-end-line="120" selection-end-column="105" />
+              <first_editor relative-caret-position="69">
+                <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -280,12 +282,12 @@
       <workItem from="1508980739799" duration="11000" />
       <workItem from="1509377742450" duration="11711000" />
       <workItem from="1509571838275" duration="20000" />
-      <workItem from="1510500004492" duration="9881000" />
+      <workItem from="1510500004492" duration="10815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33187000" />
+    <option name="totallyTimeSpent" value="34121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1925" y="150" width="1300" height="728" extended-state="0" />
@@ -673,8 +675,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-11-06-(BasicML)-9.Gaussian-Mixture-Model.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="275">
-            <caret line="120" column="105" lean-forward="false" selection-start-line="120" selection-start-column="105" selection-end-line="120" selection-end-column="105" />
+          <first_editor relative-caret-position="69">
+            <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
