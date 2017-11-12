@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e5dcd16-809e-4609-a706-d22125d13ffa" name="Default" comment="" />
+    <list default="true" id="7e5dcd16-809e-4609-a706-d22125d13ffa" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-10-30-(BasicML)-8.Naive-Bayesian-Classifier.md" afterPath="$PROJECT_DIR$/_posts/2017-10-30-(BasicML)-8.Naive-Bayesian-Classifier.md" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +18,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-10-30-(BasicML)-8.Naive-Bayesian-Classifier.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="260">
-                <caret line="170" column="49" lean-forward="false" selection-start-line="170" selection-start-column="49" selection-end-line="170" selection-end-column="49" />
+              <first_editor relative-caret-position="425">
+                <caret line="183" column="0" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -264,12 +266,12 @@
       <workItem from="1508980739799" duration="11000" />
       <workItem from="1509377742450" duration="11711000" />
       <workItem from="1509571838275" duration="20000" />
-      <workItem from="1510500004492" duration="3745000" />
+      <workItem from="1510500004492" duration="4079000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27051000" />
+    <option name="totallyTimeSpent" value="27385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1447" y="196" width="1300" height="728" extended-state="0" />
@@ -651,8 +653,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-10-30-(BasicML)-8.Naive-Bayesian-Classifier.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="260">
-            <caret line="170" column="49" lean-forward="false" selection-start-line="170" selection-start-column="49" selection-end-line="170" selection-end-column="49" />
+          <first_editor relative-caret-position="425">
+            <caret line="183" column="0" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
