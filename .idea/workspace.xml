@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e5dcd16-809e-4609-a706-d22125d13ffa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2017-11-20-(BasicML)-11.Neural_Network.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2017-11-13-(BasicML)-10.Reinforced-Learning.md" afterPath="$PROJECT_DIR$/_posts/2017-11-19-(BasicML)-10.Reinforced-Learning.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-11-06-(BasicML)-9.Gaussian-Mixture-Model.md" afterPath="$PROJECT_DIR$/_posts/2017-11-06-(BasicML)-9.Gaussian-Mixture-Model.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/img/171119_3_VF.png" afterPath="$PROJECT_DIR$/_posts/img/171119_3_VF.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/img/171119_4_QF.png" afterPath="$PROJECT_DIR$/_posts/img/171119_4_QF.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-11-19-(BasicML)-10.Reinforced-Learning.md" afterPath="$PROJECT_DIR$/_posts/2017-11-19-(BasicML)-10.Reinforced-Learning.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +20,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-11-19-(BasicML)-10.Reinforced-Learning.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="75">
-                <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <first_editor relative-caret-position="350">
+                <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -273,12 +272,12 @@
       <workItem from="1509571838275" duration="20000" />
       <workItem from="1510500004492" duration="11352000" />
       <workItem from="1510640726189" duration="426000" />
-      <workItem from="1510870351382" duration="6098000" />
+      <workItem from="1510870351382" duration="6456000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41182000" />
+    <option name="totallyTimeSpent" value="41540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="728" extended-state="0" />
@@ -697,8 +696,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-11-19-(BasicML)-10.Reinforced-Learning.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <first_editor relative-caret-position="350">
+            <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
