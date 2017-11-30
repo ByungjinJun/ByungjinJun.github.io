@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e5dcd16-809e-4609-a706-d22125d13ffa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/img/171124_7_Linear2.png" afterPath="$PROJECT_DIR$/_posts/img/171124_7_Linear2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/img/171124_8_Sigmoid.png" afterPath="$PROJECT_DIR$/_posts/img/171124_8_Sigmoid.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/img/171124_9_Sigmoid_More.png" afterPath="$PROJECT_DIR$/_posts/img/171124_9_Sigmoid_More.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural_Network.md" afterPath="$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural-Network.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural_Network.md" afterPath="$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural_Network.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-11-19-(BasicML)-10.Reinforced-Learning.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="155">
-                <caret line="149" column="0" lean-forward="true" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+              <first_editor relative-caret-position="2235">
+                <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -31,12 +28,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017-11-24-(BasicML)-11.Neural_Network.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural_Network.md">
+      <file leaf-file-name="2017-11-24-(BasicML)-11.Neural-Network.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural-Network.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2820">
-                <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+              <first_editor relative-caret-position="272">
+                <caret line="163" column="79" lean-forward="false" selection-start-line="163" selection-start-column="79" selection-end-line="163" selection-end-column="79" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -76,6 +73,7 @@
         <option value="$PROJECT_DIR$/_posts/2017-11-19-(BasicML)-10.Reinforced-Learning.md" />
         <option value="$PROJECT_DIR$/_posts/2017-11-20-(BasicML)-11.Neural_Network.md" />
         <option value="$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural_Network.md" />
+        <option value="$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural-Network.md" />
       </list>
     </option>
   </component>
@@ -93,7 +91,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="1373" />
+    <option name="y" value="127" />
     <option name="width" value="1280" />
     <option name="height" value="728" />
   </component>
@@ -128,8 +127,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -152,7 +150,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,14 +276,15 @@
       <workItem from="1510640726189" duration="426000" />
       <workItem from="1510870351382" duration="6487000" />
       <workItem from="1511545076346" duration="6903000" />
+      <workItem from="1512079558614" duration="2206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48474000" />
+    <option name="totallyTimeSpent" value="50680000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="728" extended-state="0" />
+    <frame x="1373" y="127" width="1280" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -329,6 +329,28 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-11-19-(BasicML)-10.Reinforced-Learning.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2235">
+            <caret line="149" column="0" lean-forward="true" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural-Network.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2820">
+            <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-11-19-(BasicML)-10.Reinforced-Learning.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding />
@@ -337,7 +359,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural_Network.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural-Network.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1050">
@@ -359,7 +381,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural_Network.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural-Network.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="150">
@@ -648,17 +670,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2017-10-30-Naive-Bayesian-Model.md" />
     <entry file="file://$PROJECT_DIR$/_posts/2017-10-07-(BasicML)-1.Intro-to-Machine-Learning-&amp;-Key_Terms.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="30">
             <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="48" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -693,6 +715,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2017-11-06-(BasicML)-9.Gaussian-Mixture-Model.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1035">
@@ -701,28 +728,23 @@
           <second_editor />
         </state>
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2017-11-19-(BasicML)-10.Reinforced-Learning.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="155">
-            <caret line="149" column="0" lean-forward="true" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+          <first_editor relative-caret-position="2235">
+            <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural_Network.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural-Network.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2820">
-            <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+          <first_editor relative-caret-position="272">
+            <caret line="163" column="79" lean-forward="false" selection-start-line="163" selection-start-column="79" selection-end-line="163" selection-end-column="79" />
             <folding />
           </first_editor>
           <second_editor />
