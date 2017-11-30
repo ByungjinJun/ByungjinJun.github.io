@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e5dcd16-809e-4609-a706-d22125d13ffa" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural_Network.md" afterPath="$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural-Network.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural-Network.md" afterPath="$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural-Network.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +31,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural-Network.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="272">
-                <caret line="163" column="79" lean-forward="false" selection-start-line="163" selection-start-column="79" selection-end-line="163" selection-end-column="79" />
+              <first_editor relative-caret-position="120">
+                <caret line="81" column="270" lean-forward="false" selection-start-line="81" selection-start-column="270" selection-end-line="81" selection-end-column="270" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -276,12 +275,12 @@
       <workItem from="1510640726189" duration="426000" />
       <workItem from="1510870351382" duration="6487000" />
       <workItem from="1511545076346" duration="6903000" />
-      <workItem from="1512079558614" duration="2206000" />
+      <workItem from="1512079558614" duration="2449000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50680000" />
+    <option name="totallyTimeSpent" value="50923000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1373" y="127" width="1280" height="728" extended-state="0" />
@@ -743,8 +742,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural-Network.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="272">
-            <caret line="163" column="79" lean-forward="false" selection-start-line="163" selection-start-column="79" selection-end-line="163" selection-end-column="79" />
+          <first_editor relative-caret-position="120">
+            <caret line="81" column="270" lean-forward="false" selection-start-line="81" selection-start-column="270" selection-end-line="81" selection-end-column="270" />
             <folding />
           </first_editor>
           <second_editor />
