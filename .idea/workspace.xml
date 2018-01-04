@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e5dcd16-809e-4609-a706-d22125d13ffa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-10-07-(BasicML)-1.Intro-to-Machine-Learning-&amp;-Key_Terms.md" afterPath="$PROJECT_DIR$/_posts/2017-10-07-(BasicML)-1.Intro-to-Machine-Learning-&amp;-Key_Terms.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-10-08-(BasicML)-2.Decision-Tree.md" afterPath="$PROJECT_DIR$/_posts/2017-10-08-(BasicML)-2.Decision-Tree.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-10-09-(BasicML)-3.Nearest-Neighbors.md" afterPath="$PROJECT_DIR$/_posts/2017-10-09-(BasicML)-3.Nearest-Neighbors.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-10-14-나의-일정-관리-체계(feat.일정-관리-앱).md" afterPath="$PROJECT_DIR$/_posts/2017-10-14-나의-일정-관리-체계(feat.일정-관리-앱).md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-11-06-(BasicML)-9.Gaussian-Mixture-Model.md" afterPath="$PROJECT_DIR$/_posts/2017-11-06-(BasicML)-9.Gaussian-Mixture-Model.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-11-19-(BasicML)-10.Reinforced-Learning.md" afterPath="$PROJECT_DIR$/_posts/2017-11-19-(BasicML)-10.Reinforced-Learning.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural-Network.md" afterPath="$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural-Network.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,8 +18,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural-Network.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-71">
-                <caret line="145" column="69" lean-forward="false" selection-start-line="145" selection-start-column="69" selection-end-line="145" selection-end-column="69" />
+              <first_editor relative-caret-position="199">
+                <caret line="49" column="41" lean-forward="false" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -61,13 +54,13 @@
         <option value="$PROJECT_DIR$/_posts/2017-11-13-(BasicML)-10.Reinforced-Learning.md" />
         <option value="$PROJECT_DIR$/_posts/2017-11-20-(BasicML)-11.Neural_Network.md" />
         <option value="$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural_Network.md" />
-        <option value="$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural-Network.md" />
         <option value="$PROJECT_DIR$/_posts/2017-11-19-(BasicML)-10.Reinforced-Learning.md" />
         <option value="$PROJECT_DIR$/_posts/2017-11-06-(BasicML)-9.Gaussian-Mixture-Model.md" />
         <option value="$PROJECT_DIR$/_posts/2017-10-09-(BasicML)-3.Nearest-Neighbors.md" />
         <option value="$PROJECT_DIR$/_posts/2017-10-08-(BasicML)-2.Decision-Tree.md" />
         <option value="$PROJECT_DIR$/_posts/2017-10-07-(BasicML)-1.Intro-to-Machine-Learning-&amp;-Key_Terms.md" />
         <option value="$PROJECT_DIR$/_posts/2017-10-14-나의-일정-관리-체계(feat.일정-관리-앱).md" />
+        <option value="$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural-Network.md" />
       </list>
     </option>
   </component>
@@ -272,12 +265,12 @@
       <workItem from="1510870351382" duration="6487000" />
       <workItem from="1511545076346" duration="6903000" />
       <workItem from="1512079558614" duration="2499000" />
-      <workItem from="1515097913964" duration="543000" />
+      <workItem from="1515097913964" duration="931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51516000" />
+    <option name="totallyTimeSpent" value="51904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1373" y="127" width="1370" height="811" extended-state="0" />
@@ -769,8 +762,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-11-24-(BasicML)-11.Neural-Network.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-71">
-            <caret line="145" column="69" lean-forward="false" selection-start-line="145" selection-start-column="69" selection-end-line="145" selection-end-column="69" />
+          <first_editor relative-caret-position="199">
+            <caret line="49" column="41" lean-forward="false" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
             <folding />
           </first_editor>
           <second_editor />
