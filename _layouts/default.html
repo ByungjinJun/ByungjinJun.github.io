@@ -1,20 +1,162 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="jin">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="byungjin, jin, aqualab, mobile">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Byungjin Jun</title>
 
-  {% include head.html %}
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/main.css">
+		</head>
+		<body>	
+		  <header id="header">
+		    <div class="container main-menu">
+		    	<div class="row align-items-center justify-content-between d-flex">
+			      <div id="logo">
+					  <a href="index.html"><h3 class="mb-10">Byungjin Jun</h3></a>
+			      </div>
+			      <nav id="nav-menu-container">
+			        <ul class="nav-menu">
+			          <li><a href="#about">About</a></li>
+			          <li><a href="#research">Research</a></li>
+			          <li><a href="#contact">Contact</a></li>
+			        </ul>
+			      </nav><!-- #nav-menu-container -->
+		    	</div>
+		    </div>
+		  </header><!-- #header -->
 
-  <body>
+			<!-- Start About Area -->
+			<section class="sample-text-area" id="about">
+				<div class="container">
+					<div class="row align-items-center justify-content-between">
+						<div class="col-lg-6 col-md-6 align-items-md-center">
+							<img class="img-fluid" src="img/self_tortoise.jpeg" alt="">
+						</div>
+						<div class="col-lg-5 col-md-6 home-about-right">
+							<h6>About Me</h6>
+							<h1 class="text-uppercase">Byungjin Jun (Jin)</h1>
+							<p>
+								Hi, I am a second-year Ph.D. student in the Department of Computer Science at Northwestern University studying networks. I've worked in Northwestern's <a href="http://aqualab.cs.northwestern.edu">AquaLab</a> under my advisor, Professor <a href="http://users.cs.northwestern.edu/~fabianb/">Fabián Bustamante</a>.
+							</p>
+						</div>
+						<div class="col-lg-12 pt-60" id="more_about">
+							<h2 class="mb-30">More about</h2>
+							<p>
+								What I am particularly interested in is Quality of Services (QoS) of the network and connectivity under the challenged networks from mobile web service to the network connection in satellites. This interest is rooted from painful experience I went through as a Signal Officer in the Korean Army; as a network service provider in the army, I had to be very sensitive to the network failures and the QoS.
+							</p>
+							<p>
+								On top of my primary interest in Networks, I am also learning Machine Learning and trying to bridge it to the Networks. Establishing an interconnection between Networks and Machine learning would be one of the most enjoyable works I can imagine although it would be hard due to the nature of Networks; instantaneousness, many parties, and different characteristics among sub-networks.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End About Area -->
 
-    {% include header.html %}
+			<!-- Start Research Area -->
+			<div class="whole-wrap" id="research">
+				<div class="container">
+					<h2 class="mb-30">Research</h2>
+					<div class="section-top-border">
+						<h3 class="mb-30">Google's AMP (Accelerated Mobile Project)</h3>
+						<div class="row">
+							<div class="col-md-3">
+								<img src="img/research/amp.png" alt="" class="img-fluid" align="middle">
+							</div>
+							<div class="col-md-9 mt-sm-20 left-align-p">
+								<p>The rapid growth in the number of mobile devices, subscriptions and their associated traffic, has served as motivation for several projects focused on improving mobile users' quality of experience (QoE). Few have been as contentious as the Google-initiated Accelerated Mobile Project (AMP), both praised for its seemingly instant mobile web experience and criticized based on concerns about the enforcement of its formats. This paper presents the first characterization of AMP’s impact on users’ QoE.We do this using a corpus of over 2,100 AMP webpages, and their corresponding non-AMP counterparts, based on trendy-keyword-based searches. We characterized AMP’s impact looking at common web QoE metrics, including Page Load Time, Time to First Byte and SpeedIndex (SI). Our results show that AMP significantly improves SI, yielding on average a 60% lower SI than non-AMP pages without accounting for prefetching. Prefetching of AMP pages pushes this advantage even further, with prefetched pages loading over 2,000ms faster than non-prefetched AMP pages. This clear boost may come, however, at a non-negligible cost for users with limited data plans as it incurs an average of over 1.4 MB of additional data downloaded, unbeknownst to users.</p>
+							</div>
+						</div>
+						<h4 class="mb-10">
+							<a class="genric-btn primary-border small">Poster</a> PAM 2019
+						</h4>
+						<h4 class="mb-10">
+							<a class="genric-btn primary-border small">Conference paper</a> Mobicom 2019
+							<a href="http://aqualab.cs.northwestern.edu/wp-content/uploads/2019/02/AMP-Mobicom-2019.pdf">
+								<img src="img/application-pdf.png" class="img-fluid"></a>
+						</h4>
+					</div>
+					<div>
+						<h3 class="mb-30">Roaming and IPX (IP exchange) </h3>
+						<div class="row">
+							<div class="col-md-3">
+								<img src="img/research/ipx.jpg" alt="" class="img-fluid">
+							</div>
+							<div class="col-md-9 mt-sm-20 left-align-p">
+								<p>Roaming has been common not only for human but IoT machines from connected cars to logistic and wearables. More diverse traffic has caused new challenges in interconnecting each service provider to others like mobile network providers, fixed network operators, application service providers, and internet service providers. GSM Association-developed IP exchange (IPX) model is a telecommunication interconnection model for various IP-based traffic which needs a certain level of QoS between service providers. IPX can help to handle messy interconnections, so many providers have adopted the service. Also, learning about the characteristics of Machine-to-Machine (M2M) roaming would shed light on the breadth of IoT/M2M platforms.</p>
+							</div>
+						</div>
+						<h4 class="mb-10">
+							<a class="genric-btn success-border small">Internship</a> Telefonica (Barcelona, 2018)
+						</h4>
+						<br />
+					</div>
+				</div>
+			</div>
+		  <!-- End Research Area -->
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+            <!-- start footer Area -->
+            <footer class="footer-area section-half" id="contact">
+                <div class="container">
+					<div class="row">
+                        <div class="col-lg-5 col-md-6 col-sm-6">
+                            <div class="single-footer-widget">
+								<h4>Contact</h4>
+								<div class="footer-col footer-col-2">
+									<p>
+										byungjinjun2022 at u dot northwestern dot edu
+									</p>
 
-    {% include footer.html %}
+									{% if site.github_username %}
+										{% include icon-github.html %}
+									{% endif %}
 
-  </body>
+									{% if site.linkedin_username %}
+										{% include icon-linkedin.html %}
+									{% endif %}
 
-</html>
+									{% if site.facebook_username %}
+										{% include icon-facebook.html %}
+									{% endif %}
+								</div>
+                                <!--<p>-->
+                                    <!--We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.-->
+                                <!--</p>-->
+								<br/>
+
+                                <p class="footer-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End footer Area -->		
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+  			<script src="js/easing.min.js"></script>
+			<script src="js/superfish.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>
+			<script src="js/jquery.counterup.min.js"></script>
+			<script src="js/simple-skillbar.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
+			<script src="js/main.js"></script>
+		</body>
+	</html>
