@@ -120,13 +120,42 @@
 			</div>
 		  <!-- End Research Area -->
 
+		  <br />
+		  <!-- Start Contact Area -->
+			<div class="whole-wrap" id="research">
+				<div class="container">
+					<h2 class="mb-30">Contact</h2>
+					<div class="section-top-border">
+						<div class="row">
+							<div class="col-md-9 mt-sm-20 left-align-p">
+								<p>
+									byungjinjun2022 at u dot northwestern dot edu
+								</p>
+								{% if site.github_username %}
+									{% include icon-github.html %}
+								{% endif %}
+
+								{% if site.linkedin_username %}
+									{% include icon-linkedin.html %}
+								{% endif %}
+
+								{% if site.facebook_username %}
+									{% include icon-facebook.html %}
+								{% endif %}
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		  <!-- End Contact Area -->
+
             <!-- start footer Area -->
             <footer class="footer-area section-half" id="contact">
                 <div class="container">
 					<div class="row">
                         <div class="col-lg-5 col-md-6 col-sm-6">
                             <div class="single-footer-widget">
-								<h4>Contact</h4>
+<!--								<h4>Contact</h4>
 								<div class="footer-col footer-col-2">
 									<p>
 										byungjinjun2022 at u dot northwestern dot edu
@@ -143,12 +172,10 @@
 									{% if site.facebook_username %}
 										{% include icon-facebook.html %}
 									{% endif %}
-								</div>
+								</div>-->
                                 <!--<p>-->
                                     <!--We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.-->
                                 <!--</p>-->
-								<br/>
-
                                 <p class="footer-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
