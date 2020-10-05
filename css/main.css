@@ -891,7 +891,7 @@ td, th {
 /*---------- End Elements Page -------------*/
 .sample-text-area {
   background: #f9f9ff;
-  padding: 300px 0 70px 0;
+  padding: 270px 0 70px 0;
 }
 
 .sample-text {
@@ -2066,7 +2066,7 @@ h1, h2, h3, h4, h5, h6 {
 .profilepic {
   background: url('../img/self_tortoise.jpeg');
   background-size:300px;
-  height: 20px;
+  height: 250px;
   width: 300px;
   border: 4px solid #9370c5;
   padding: 2px;
@@ -4360,7 +4360,7 @@ dl.accordion.time-line:before {
 }
 
 .single-footer-widget ul li {
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
 
 .single-footer-widget ul li a {
@@ -4456,13 +4456,13 @@ dl.accordion.time-line:before {
 
 @media (max-width: 991.98px) {
   .single-footer-widget {
-    margin-bottom: 30px;
+    margin-bottom: 3px;
   }
 }
 
 .single-footer-widget .footer-social a {
-  width: 30px;
-  height: 30px;
+  width: 3px;
+  height: 3px;
   display: inline-block;
   text-align: center;
   -webkit-transition: all 0.3s ease 0s;
@@ -4481,7 +4481,7 @@ dl.accordion.time-line:before {
 }
 
 .footer-bottom {
-  padding-top: 50px;
+  padding-top: 5px;
 }
 
 .footer-bottom .footer-social {
@@ -4491,7 +4491,7 @@ dl.accordion.time-line:before {
 @media (max-width: 991px) {
   .footer-bottom .footer-social {
     text-align: left;
-    margin-top: 30px;
+    margin-top: 3px;
   }
 }
 
