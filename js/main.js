@@ -329,8 +329,10 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
+			$('.profilepic').addClass('profilepic-scrolled');
             $('#header').addClass('header-scrolled');
         } else {
+			$('.profilepic').removeClass('profilepic-scrolled');
             $('#header').removeClass('header-scrolled');
         }
     });
