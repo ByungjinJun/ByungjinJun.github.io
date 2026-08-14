@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7410 3900" role="img" aria-label="United States flag">
+  <rect width="7410" height="3900" fill="#fff"/>
+  <g fill="#b22234">
+    <rect width="7410" height="300" y="0"/><rect width="7410" height="300" y="600"/><rect width="7410" height="300" y="1200"/><rect width="7410" height="300" y="1800"/><rect width="7410" height="300" y="2400"/><rect width="7410" height="300" y="3000"/><rect width="7410" height="300" y="3600"/>
+  </g>
+  <rect width="2964" height="2100" fill="#3c3b6e"/>
+  <g fill="#fff">
+    <circle cx="247" cy="175" r="66"/><circle cx="741" cy="175" r="66"/><circle cx="1235" cy="175" r="66"/><circle cx="1729" cy="175" r="66"/><circle cx="2223" cy="175" r="66"/><circle cx="2717" cy="175" r="66"/>
+    <circle cx="494" cy="350" r="66"/><circle cx="988" cy="350" r="66"/><circle cx="1482" cy="350" r="66"/><circle cx="1976" cy="350" r="66"/><circle cx="2470" cy="350" r="66"/>
+    <circle cx="247" cy="525" r="66"/><circle cx="741" cy="525" r="66"/><circle cx="1235" cy="525" r="66"/><circle cx="1729" cy="525" r="66"/><circle cx="2223" cy="525" r="66"/><circle cx="2717" cy="525" r="66"/>
+    <circle cx="494" cy="700" r="66"/><circle cx="988" cy="700" r="66"/><circle cx="1482" cy="700" r="66"/><circle cx="1976" cy="700" r="66"/><circle cx="2470" cy="700" r="66"/>
+    <circle cx="247" cy="875" r="66"/><circle cx="741" cy="875" r="66"/><circle cx="1235" cy="875" r="66"/><circle cx="1729" cy="875" r="66"/><circle cx="2223" cy="875" r="66"/><circle cx="2717" cy="875" r="66"/>
+    <circle cx="494" cy="1050" r="66"/><circle cx="988" cy="1050" r="66"/><circle cx="1482" cy="1050" r="66"/><circle cx="1976" cy="1050" r="66"/><circle cx="2470" cy="1050" r="66"/>
+    <circle cx="247" cy="1225" r="66"/><circle cx="741" cy="1225" r="66"/><circle cx="1235" cy="1225" r="66"/><circle cx="1729" cy="1225" r="66"/><circle cx="2223" cy="1225" r="66"/><circle cx="2717" cy="1225" r="66"/>
+    <circle cx="494" cy="1400" r="66"/><circle cx="988" cy="1400" r="66"/><circle cx="1482" cy="1400" r="66"/><circle cx="1976" cy="1400" r="66"/><circle cx="2470" cy="1400" r="66"/>
+    <circle cx="247" cy="1575" r="66"/><circle cx="741" cy="1575" r="66"/><circle cx="1235" cy="1575" r="66"/><circle cx="1729" cy="1575" r="66"/><circle cx="2223" cy="1575" r="66"/><circle cx="2717" cy="1575" r="66"/>
+  </g>
+</svg>

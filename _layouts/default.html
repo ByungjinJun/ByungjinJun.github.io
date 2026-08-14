@@ -19,15 +19,21 @@
       <a class="brand" href="{{ '/' | relative_url }}" aria-label="Byungjin Jun home">Byungjin Jun</a>
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="{{ '/' | relative_url }}#research"><span data-lang="en">Research</span><span data-lang="ko">연구</span></a>
+        <a href="{{ '/lab/' | relative_url }}"><span data-lang="en">Lab</span><span data-lang="ko">연구실</span></a>
         <a href="{{ '/' | relative_url }}#publications"><span data-lang="en">Publications</span><span data-lang="ko">논문</span></a>
         <a href="{{ '/' | relative_url }}#teaching"><span data-lang="en">Teaching</span><span data-lang="ko">교육</span></a>
         <a href="{{ '/blog/' | relative_url }}"><span data-lang="en">Blog</span><span data-lang="ko">블로그</span></a>
         <a href="{{ '/files/cv.pdf' | relative_url }}">CV</a>
       </nav>
       <div class="language-switch" role="group" aria-label="Language">
-        <button type="button" data-set-lang="en" class="active" aria-pressed="true">EN</button>
-        <span aria-hidden="true">/</span>
-        <button type="button" data-set-lang="ko" aria-pressed="false">한국어</button>
+        <button type="button" data-set-lang="en" class="active" aria-pressed="true" aria-label="English" title="English">
+          <img src="{{ '/assets/img/flags/us.svg' | relative_url }}" alt="" width="28" height="19">
+          <span class="sr-only">English</span>
+        </button>
+        <button type="button" data-set-lang="ko" aria-pressed="false" aria-label="한국어" title="한국어">
+          <img src="{{ '/assets/img/flags/kr.svg' | relative_url }}" alt="" width="28" height="19">
+          <span class="sr-only">한국어</span>
+        </button>
       </div>
     </div>
   </header>

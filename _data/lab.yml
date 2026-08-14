@@ -1,0 +1,47 @@
+name: Human Aware Systems
+acronym: HAS
+
+current_members: []
+# Add current students like this:
+# - id: hong-gildong
+#   name_en: Gildong Hong
+#   name_ko: 홍길동
+#   institution_en: Example University
+#   institution_ko: 예시대학교
+#   program_en: M.S. Student, Computer Science
+#   program_ko: 컴퓨터과학 석사과정
+#   coadvisor_en: Prof. Example Name
+#   coadvisor_ko: 예시 교수
+#   interests:
+#     - Networked Systems
+#     - Web QoE
+#   website: ""
+#   email: ""
+
+alumni: []
+# Add graduated students like this:
+# - id: kim-minsu
+#   name_en: Minsu Kim
+#   name_ko: 김민수
+#   institution_en: Example University
+#   institution_ko: 예시대학교
+#   program_en: M.S., Computer Science
+#   program_ko: 컴퓨터과학 석사 졸업
+#   period: 2024–2026
+#   next_en: Example Organization
+#   next_ko: 예시 기관
+#   interests:
+#     - Mobile Networks
+
+publications:
+  - id: chi-ea-2026-visual-correctness
+    year: 2026
+    title: "Measuring Webpage Visual Correctness as Users Experience It: Dynamic Region-aware Visual Evaluation"
+    authors: "Gitaek Lee, Taehwa Lee, Byungjin Jun"
+    venue: "CHI EA '26"
+    url: "https://dl.acm.org/doi/10.1145/3772363.3798584"
+    member_ids: []
+# To connect a paper to students, add their ids to member_ids, e.g.:
+#     member_ids:
+#       - hong-gildong
+#       - kim-minsu
