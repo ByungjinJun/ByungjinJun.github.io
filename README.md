@@ -1,57 +1,13 @@
-Not so much things to read.
+# byungjinjun.github.io
 
-<!--
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Personal academic website for Byungjin Jun, built with Jekyll and hosted on GitHub Pages.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+## Structure
+- `_layouts/home.html` — homepage content
+- `_layouts/default.html` — shared navigation/footer shell
+- `assets/css/site.css` — site styling
+- `assets/js/site.js` — English/Korean language toggle
+- `blog.md` — archive of legacy posts
+- `files/cv.pdf` — CV
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
--->
-
-<!--
-
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/ByungjinJun/ByungjinJun.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ByungjinJun/ByungjinJun.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
--->
+The language switch stores the visitor's choice in `localStorage`. English is the default language.
